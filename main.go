@@ -187,8 +187,8 @@ func closeSession(e *etw.Event) {
 }
 
 func checkIgnored(userEvent string, listIgnored []string) bool {
-	for _, usuario := range listIgnored {
-		if usuario == userEvent {
+	for _, user := range listIgnored {
+		if user == userEvent {
 			return true
 		}
 	}
